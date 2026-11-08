@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ірина Красильникова · Personal Brand Producer</title>
+<meta name="description" content="Формую медійний образ експерток і заводжу за руку в подкасти, де їх почують ті, хто готовий купувати.">
+<meta property="og:title" content="Ірина Красильникова · Personal Brand Producer">
+<meta property="og:description" content="Формую ваш медійний образ і заводжу за руку в подкасти.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#16100c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Golos+Text:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#efe5d6; --ink2:rgba(239,229,214,.68); --line:rgba(239,229,214,.2);
+  --cream:#ebe2d3; --cink:#1a130e; --cink2:rgba(26,19,14,.66); --cline:rgba(26,19,14,.2);
+  --amber:#d9a46f; --amber-d:#9a5f2c;
+  --serif:'Noto Serif Display','Times New Roman',serif; --sans:'Golos Text','Segoe UI',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --pad:clamp(22px,6vw,56px);
+}
+*{box-sizing:border-box} h1,h2,h3,p{margin:0}
+html{background:#0f0a07;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:#0f0a07}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:url("img/grain.png");opacity:.7}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto}
+section{padding:clamp(48px,10vw,88px) var(--pad)}
+.dark{background:radial-gradient(120% 60% at 20% 0%,#2a1e16 0%,#16100c 60%,#0f0a07 100%)}
+.light{background:var(--cream);color:var(--cink)}
+.serif{font-family:var(--serif);font-variation-settings:'wdth' 62.5}
+.label{font:500 12px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--amber)}
+.light .label{color:var(--amber-d)}
+.meta{display:flex;justify-content:space-between;gap:12px;font:500 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+p,li{text-wrap:pretty}
+h1{font:300 clamp(44px,11vw,84px)/.98 var(--serif);font-variation-settings:'wdth' 62.5;letter-spacing:-.01em;margin-top:clamp(36px,8vw,64px);text-wrap:balance}
+h1 em{font-style:italic;color:var(--amber)}
+h2{font:300 clamp(40px,9vw,68px)/1 var(--serif);font-variation-settings:'wdth' 62.5;text-wrap:balance}
+.sub{font:400 clamp(19px,4.6vw,24px)/1.4 var(--sans);margin-top:24px}
+.who{font:400 clamp(16px,3.9vw,18px)/1.5 var(--sans);color:var(--ink2);margin-top:14px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:2px;font:500 15px/1 var(--sans);text-decoration:none;min-height:48px}
+.btn.main{background:var(--amber);color:#1a130e}
+.btn.ghost{border:1px solid var(--line);color:var(--ink)}
+.light .btn.ghost{border-color:var(--cline);color:var(--cink)}
+.hint{font:400 14px/1.5 var(--sans);color:var(--ink2);margin-top:12px}
+
+.photo{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;filter:contrast(1.05) saturate(.88)}
+
+.menu{margin-top:24px}
+.menu .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.menu .r:last-child{border-bottom:1px solid var(--line)}
+.menu b{display:block;font:400 clamp(26px,6.4vw,36px)/1.05 var(--serif);font-variation-settings:'wdth' 62.5}
+.menu span{display:block;font:400 14px/1.4 var(--sans);color:var(--ink2);margin-top:4px}
+.menu em{font:300 clamp(26px,6.4vw,36px)/1 var(--serif);font-variation-settings:'wdth' 62.5;font-style:normal;color:var(--amber);white-space:nowrap;text-align:right}
+.menu em small{display:block;font:500 9px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+
+.steps{display:grid;grid-template-columns:1fr;gap:4px;margin-top:28px}
+@media(min-width:620px){.steps{grid-template-columns:1fr 1fr;column-gap:36px}}
+.step{border-top:1px solid var(--cline);padding:16px 0 14px}
+.step i{display:block;font:300 40px/1 var(--serif);font-variation-settings:'wdth' 62.5;font-style:normal;color:var(--amber-d)}
+.step h3{font:500 20px/1.25 var(--sans);margin-top:8px}
+.step p{font:400 16px/1.5 var(--sans);color:var(--cink2);margin-top:6px}
+.fmt{margin-top:28px}
+.fmt .r{display:grid;grid-template-columns:1fr;gap:6px;padding:16px 0;border-top:1px solid var(--cline)}
+.fmt .r:last-child{border-bottom:1px solid var(--cline)}
+.fmt b{font:400 clamp(26px,6vw,32px)/1.1 var(--serif);font-variation-settings:'wdth' 62.5}
+.fmt p{font:400 16px/1.5 var(--sans)}
+
+.who-top{display:grid;grid-template-columns:1fr 38%;gap:20px;align-items:end}
+.who-top img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 12%;display:block;filter:contrast(1.04) saturate(.92)}
+.creds{margin-top:28px}
+.cred{display:grid;grid-template-columns:clamp(96px,26vw,150px) 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:baseline}
+.cred b{font:300 clamp(32px,8vw,44px)/1 var(--serif);font-variation-settings:'wdth' 62.5;color:var(--amber)}
+.cred p{font:400 15px/1.5 var(--sans);color:var(--ink2)}
+.cred p strong{color:var(--ink);font-weight:500}
+
+.press{margin-top:36px}
+.press .g{padding:14px 0;border-top:1px solid var(--line)}
+.press .t{font:500 10px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+.press p{font:400 clamp(22px,5.4vw,28px)/1.35 var(--serif);font-variation-settings:'wdth' 62.5;color:var(--ink2);margin-top:6px}
+.press a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--amber);text-decoration-thickness:1px;text-underline-offset:4px}
+.press a:hover{color:var(--amber)}
+.press p.label{font:500 12px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin:0 0 6px}
+
+.clap{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;filter:contrast(1.05) saturate(.85)}
+.sign{font:300 clamp(40px,10vw,64px)/1 var(--serif);font-variation-settings:'wdth' 62.5;font-style:italic}
+footer .contacts{margin-top:28px;display:grid;gap:10px;font:400 16px/1.5 var(--sans)}
+footer .contacts span{font:500 10px/2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);display:inline-block;width:92px}
+footer .small{margin-top:40px;font:400 12px/1.5 var(--mono);color:var(--ink2);letter-spacing:.06em}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="meta"><span>Ірина Красильникова</span><span>Personal Brand Producer</span></div>
+    <h1>Формую ваш медійний образ і <em>заводжу за руку в подкасти.</em></h1>
+    <p class="sub">Туди, де вас почують ті, хто готовий купувати. А потім перетворюю ці ефіри на клієнтів.</p>
+    <p class="who">Для експерток і власниць бізнесу, у яких уже є продукт і дохід. Шлях до впізнаваності займає від 6 місяців, і ми проходимо його разом.</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:krasylnykovai@gmail.com?subject=%D0%95%D0%A4%D0%86%D0%A0">Написати мені</a>
+      <a class="btn ghost" href="mediakit-iryna-krasylnykova.pdf" download>Медіакіт PDF</a>
+    </div>
+    <p class="hint">Або напишіть «ЕФІР» у дірект Instagram. За 30 хвилин підберемо подкаст під вашу аудиторію.</p>
+  </div>
+</section>
+
+<img class="photo" src="img/studio.jpg" alt="Студія подкасту: два крісла і мікрофони">
+
+<section class="dark">
+  <div class="wrap">
+    <p class="label">Куди я можу вас завести</p>
+    <div class="menu">
+      <div class="r"><div><b>«Саша і Сенс»</b><span>well-being і психологія · 70% жінки, 25–54</span></div><em>80–120 тис.<small>переглядів випуску</small></em></div>
+      <div class="r"><div><b>Олександр Коляда</b><span>генетик про здоров'я і довголіття · чоловіки й жінки порівну, 25–44</span></div><em>98 тис.<small>переглядів випуску</small></em></div>
+      <div class="r"><div><b>«Балючі теми»</b><span>Наталія Балюк про те, що соромно запитати · 80% жінки, 45+</span></div><em>104 тис.<small>переглядів випуску</small></em></div>
+      <div class="r"><div><b>«Поза Формулами»</b><span>науково-популярні розмови · 58% чоловіки, 25–44</span></div><em>59 тис.<small>переглядів випуску</small></em></div>
+      <div class="r"><div><b>Катя Гайдут</b><span>глибокі інтерв'ю й особисті історії · 97% жінки, 25–44</span></div><em>30 тис.<small>переглядів випуску</small></em></div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <p class="label">Як я працюю</p>
+    <h2 style="margin-top:14px">Від образу до клієнтів</h2>
+    <div class="steps">
+      <div class="step"><i>01</i><h3>Образ</h3><p>Розпаковую, про що ви і якою вас мають бачити: опори, 5 історій, 3 тези. Збираємо образ до першого ефіру.</p></div>
+      <div class="step"><i>02</i><h3>Підготовка</h3><p>Проходимо кожен ефір заздалегідь: що розповісти, як відповісти на незручне, як звучати й виглядати, куди покликати людей наприкінці.</p></div>
+      <div class="step"><i>03</i><h3>Ефіри</h3><p>Заводжу в подкасти й медіа під вашу аудиторію, тему і мову. Домовляюся там, куди вас самих не пустять. Преса, події й колаборації, коли є привід.</p></div>
+      <div class="step"><i>04</i><h3>Клієнти</h3><p>До ефіру готуємо сторінку: мова, шапка, лід-магніт, промокод. Через 7 і 30 днів показую, скільки людей прийшло і скільки купило.</p></div>
+    </div>
+    <div class="fmt">
+      <div class="r"><span class="label">Вхід</span><b>Розпаковка образу</b><p>2–3 зустрічі: образ, історії, тези, сторінка-візитка для подкастів.</p></div>
+      <div class="r"><span class="label">Від 6 місяців</span><b>Медійне продюсування</b><p>Щомісяця 1–2 ефіри, підготовка, преса за приводом, звіт.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="who-top">
+      <div><h2>Чому я</h2></div>
+      <img src="img/portrait.jpg" alt="Ірина Красильникова у студії подкасту">
+    </div>
+    <div class="creds">
+      <div class="cred"><b>11 000</b><p><strong>Підприємиця.</strong> 8 років я будувала Pushka School: 11 000 випускників із 39 країн, віртуальний показ на Riga Fashion Week. Школу продала. Тому дивлюся на ваш ефір як на продаж.</p></div>
+      <div class="cred"><b>43 700</b><p><strong>Продюсерка.</strong> Подкаст «Саша і Сенс» за 8 місяців виріс з 5 000 до 43 700 підписників без жодної гривні на рекламу. Я знаю зсередини, якого гостя чекає ведучий.</p></div>
+      <div class="cred"><b>5</b><p><strong>Партнерка подкастів.</strong> Веду партнерства 5 подкастів із брендами, тому ведучі довіряють гостям, яких я рекомендую.</p></div>
+      <div class="cred"><b>260+</b><p><strong>Брендів у моїй базі.</strong> Для вас це колаборації і спільні проєкти з брендами, коли ваш образ уже готовий.</p></div>
+      <div class="cred"><b>12 000</b><p><strong>«Смілива».</strong> Стільки дівчат-підлітків у 7 містах пройшли мій соціальний проєкт під парасолею фонду Маші Єфросиніної.</p></div>
+    </div>
+    <div class="press">
+      <p class="label">Преса · натисніть, щоб відкрити статтю</p>
+      <div class="g"><p class="t">Riga Fashion Week</p><p><a href="https://vogue.ua/article/fashion/brend/ukrajinskih-dizayneri-z-pushka-digital-fashion-school-vidkrili-tizhden-modi-v-rizi-48844.html" target="_blank" rel="noopener">Vogue&nbsp;UA</a> · <a href="https://www.lofficielbaltic.com/fashion/virtualnyy-3d-pokaz-ukrainskih-dizaynerov-otkroet-riga-fashion-week" target="_blank" rel="noopener">L'Officiel&nbsp;Baltic</a> · <a href="https://bublik.delfi.ee/statja/96660967/virtualnyy-3d-pokaz-ukrainskih-dizaynerov-iz-pushka-digital-fashion-school-otkroet-riga-fashion-week" target="_blank" rel="noopener">Delfi</a></p></div>
+      <div class="g"><p class="t">Ukrainian Fashion Week і PUSHKA Fashionverse</p><p><a href="https://vogue.ua/article/fashion/brend/budushchee-ryadom-na-ufw-predstavili-pervyy-v-ukraine-virtualnyy-fashion-mir-47549.html" target="_blank" rel="noopener">Vogue&nbsp;UA</a> · <a href="https://marieclaire.ua/uk/fashion/virtualnij-ufw-vipuskniki-pushka-school-predstavili-kolektsiyi-didzhital-brendiv" target="_blank" rel="noopener">Marie&nbsp;Claire</a> · <a href="https://insider.ua/czifrova-moda-interaktivne-fashion-shou-pushka-fashionverse/" target="_blank" rel="noopener">Insider&nbsp;UA</a> · <a href="https://www.theiconua.com/fashion/pushka-didgital-show-na-ukrainian-fashion-week-noseason-sept-2021/" target="_blank" rel="noopener">The&nbsp;Icon</a> · <a href="https://royaldesign.ua/ru/PUSHKA_DIGITAL_SHOW_UFW_ukr.bXhPL/" target="_blank" rel="noopener">Royal&nbsp;Design</a> · УНІАН · The&nbsp;Page · Woman&nbsp;Magazine</p></div>
+      <div class="g"><p class="t">Безкоштовні курси 3D-одягу</p><p><a href="https://vogue.ua/article/culture/lifestyle/pushka-school-vidkrivaye-bezkoshtovniy-dostup-do-kursiv-zi-stvorennya-3d-odyagu-48027.html" target="_blank" rel="noopener">Vogue&nbsp;UA</a> · <a href="https://marieclaire.ua/uk/fashion___uk/pushka-school-vidkrivaye-bezkoshtovnij-dostup-do-kursiv-zi-stvorennya-3d-odyagu" target="_blank" rel="noopener">Marie&nbsp;Claire</a> · <a href="https://lifestyle.24tv.ua/fashion/fashion-shkola-pushka-school-bezkoshtovno-nadaye-dostup-do-kursiv_n1915013" target="_blank" rel="noopener">24&nbsp;канал</a> · <a href="https://officiel-online.com/all-news/create-3D-clothes-for-free-Pushka-School-opens-access-to-courses/" target="_blank" rel="noopener">L'Officiel</a> · НВ · Buro&nbsp;24/7</p></div>
+      <div class="g"><p class="t">Don't Take Fake · телебачення</p><p><a href="https://donttakefake.com/pushka-school/" target="_blank" rel="noopener">DTF&nbsp;Magazine</a> · <a href="https://donttakefake.com/dtf-magazine-i-pushka-school-provedut-lektorij-na-don-t-take-fake-2018/" target="_blank" rel="noopener">лекторій&nbsp;DTF&nbsp;2018</a> · Новий&nbsp;канал · шоу&nbsp;«Профешн»</p></div>
+    </div>
+  </div>
+</section>
+
+<img class="clap" src="img/clapper.jpg" alt="Хлопавка зі зйомок подкасту «Саша і Сенс»">
+
+<footer>
+<section class="dark">
+  <div class="wrap">
+    <p class="sign">Мій головний проєкт&nbsp;— людина.</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:krasylnykovai@gmail.com?subject=%D0%95%D0%A4%D0%86%D0%A0">Написати мені</a>
+      <a class="btn ghost" href="mediakit-iryna-krasylnykova.pdf" download>Медіакіт PDF</a>
+    </div>
+    <div class="contacts">
+      <div><span>Пошта</span><a href="mailto:krasylnykovai@gmail.com">krasylnykovai@gmail.com</a></div>
+      <div><span>Instagram</span>напишіть «ЕФІР» у дірект</div>
+    </div>
+    <p class="small">© 2026 Ірина Красильникова</p>
+  </div>
+</section>
+</footer>
+
+</main>
+<script>
+// нерозривні пробіли після коротких слів, щоб вони не висіли в кінці рядка
+const short=/(^|[\s(«])(і|й|в|у|з|а|та|на|до|не|що|як|із|зі|за|по|від|для|чи|ми|я|це|їм|їх)\s/gi;
+const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
+while((n=w.nextNode())){if(n.parentElement.closest('style,script'))continue;n.nodeValue=n.nodeValue.replace(short,(m,a,b)=>a+b+' ').replace(short,(m,a,b)=>a+b+' ').replace(/(\d) (\d{3})/g,'$1 $2')}
+</script>
+</body>
+</html>
